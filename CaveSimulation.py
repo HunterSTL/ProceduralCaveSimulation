@@ -1,7 +1,7 @@
 import pygame
 import random
 
-class GridSimulation:
+class CaveSimulation:
     def __init__(self, grid_height, grid_width, cell_size, density, iterations, search_range):
         self.grid_height = grid_height
         self.grid_width = grid_width
@@ -79,6 +79,6 @@ class GridSimulation:
         pygame.quit()
 
 # Example usage
-simulation = GridSimulation(50, 50, 20, 0.4, 2, 2)
+simulation = CaveSimulation(50, 50, 20, 0.45, 2, 2)
 simulation.simulate_grid()
 simulation.run_simulation()
